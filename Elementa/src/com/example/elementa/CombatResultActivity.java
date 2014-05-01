@@ -4,6 +4,7 @@ import com.example.elementa.util.SystemUiHider;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -48,7 +49,14 @@ public class CombatResultActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
+		
+		
+		// Set portrait orientation
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        // Hide title bar
+        //requestWindowFeature(Window.FEATURE_NO_TITLE);
+        
+        
 		setContentView(R.layout.activity_combat_result);
 
 		final View controlsView = findViewById(R.id.fullscreen_content_controls);
