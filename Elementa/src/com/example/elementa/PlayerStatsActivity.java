@@ -5,12 +5,14 @@ import com.example.elementa.util.SystemUiHider;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
+import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
+import android.widget.TextView;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -61,6 +63,23 @@ public class PlayerStatsActivity extends Activity {
 
 		final View controlsView = findViewById(R.id.fullscreen_content_controls);
 		final View contentView = findViewById(R.id.fullscreen_content);
+		
+
+		
+		TextView text1 = (TextView) findViewById(R.id.textView1);
+		//text1.setText(R.string.app_name);
+		
+		//Load fonts
+
+	    Typeface HeadFont = Typeface.createFromAsset(getAssets(), "fonts/header.ttf");
+	    Typeface TextFont = Typeface.createFromAsset(getAssets(), "fonts/text.ttf");
+	     
+	   
+	 	//Apply fonts
+		
+	     text1.setTypeface(HeadFont);
+	     
+	     
 
 		// Set up an instance of SystemUiHider to control the system UI for
 		// this activity.

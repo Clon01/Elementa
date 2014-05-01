@@ -16,6 +16,7 @@
         <activity
             android:name="com.example.elementa.PlayerStatsActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_player_stats"
             android:theme="@style/FullscreenTheme" >
             <intent-filter>
@@ -27,6 +28,7 @@
         <activity
             android:name="com.example.elementa.CombatResultActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_combat_result"
             android:theme="@style/FullscreenTheme" >
         </activity>
