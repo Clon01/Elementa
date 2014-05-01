@@ -4,11 +4,13 @@ import com.example.elementa.util.SystemUiHider;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -49,6 +51,12 @@ public class PlayerStatsActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
+		// Set portrait orientation
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        // Hide title bar
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+		
+		
 		setContentView(R.layout.activity_player_stats);
 
 		final View controlsView = findViewById(R.id.fullscreen_content_controls);
