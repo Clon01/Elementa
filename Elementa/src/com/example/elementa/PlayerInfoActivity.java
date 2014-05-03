@@ -20,7 +20,7 @@ import android.widget.TextView;
  * 
  * @see SystemUiHider
  */
-public class CombatResultActivity extends Activity {
+public class PlayerInfoActivity extends Activity {
 	/**
 	 * Whether or not the system UI should be auto-hidden after
 	 * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
@@ -53,7 +53,6 @@ public class CombatResultActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		
 		// Set portrait orientation
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         // Hide title bar
@@ -61,41 +60,41 @@ public class CombatResultActivity extends Activity {
         
         //Load fonts
 	    Typeface HeadFont = Typeface.createFromAsset(getAssets(), "fonts/header.ttf");
-	    //Typeface TextFont = Typeface.createFromAsset(getAssets(), "fonts/text.ttf");
+	    Typeface TextFont = Typeface.createFromAsset(getAssets(), "fonts/text.ttf");
 	    
-	  //FAKE VARIABLES
-	  //END FAKE VAR
+	  //FAKE VARIABLE
+	  		//END FAKE VAR
+
+		setContentView(R.layout.activity_player_info);
+
 	    
-	    
-		setContentView(R.layout.activity_combat_result);
+	  	//Load Text of View for modify
+			//Name
+			TextView lblName = (TextView) findViewById(R.id.nameplayerinfo);
+			//Level
+			TextView lblLvl = (TextView) findViewById(R.id.levelplayerinfo);
+			//Experience
+			TextView lblExperience = (TextView) findViewById(R.id.expplayerinfo);
+			//Mana
+			TextView lblMana = (TextView) findViewById(R.id.manaplayerinfo);
+			//Life
+			TextView lblLife = (TextView) findViewById(R.id.lifeplayerinfo);
+			//Defense
+			TextView lblDefense = (TextView) findViewById(R.id.defenseplayerinfo);
+
+		
+		//Apply fonts
+	     lblName.setTypeface(HeadFont);	
+	     lblLvl.setTypeface(TextFont);
+	     lblExperience.setTypeface(TextFont);
+	     lblMana.setTypeface(HeadFont);
+	     lblLife.setTypeface(HeadFont);
+	     lblDefense.setTypeface(HeadFont);
+		
+		
 		
 		final View controlsView = findViewById(R.id.fullscreen_content_controls);
 		final View contentView = findViewById(R.id.fullscreen_content);
-
-		//Load Text of View for modify
-				//STATS
-				TextView lblTitle = (TextView) findViewById(R.id.lblTitle);
-				
-				//Total Symbols
-				TextView lblSymbols = (TextView) findViewById(R.id.lblSymbols);
-				//Mana Used
-				TextView lblMana = (TextView) findViewById(R.id.lblMana);
-				//Damage Done
-				TextView lblDmgDone = (TextView) findViewById(R.id.lblDmgDone);
-				//Damage Received
-				TextView lblDmgRecived = (TextView) findViewById(R.id.lblDmgRecived);
-		
-				//Apply fonts
-			    //all HeadFont
-			     lblTitle.setTypeface(HeadFont);	
-			     lblSymbols.setTypeface(HeadFont);
-			     lblMana.setTypeface(HeadFont);
-			     lblDmgDone.setTypeface(HeadFont);
-			     lblDmgRecived.setTypeface(HeadFont);
-		
-		
-		
-
 
 		// Set up an instance of SystemUiHider to control the system UI for
 		// this activity.

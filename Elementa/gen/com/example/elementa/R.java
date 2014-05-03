@@ -162,25 +162,93 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int black_overlay=0x7f040000;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int parchment=0x7f020001;
+        public static final int aquarius=0x7f020000;
+        public static final int aries=0x7f020001;
+        public static final int cancer=0x7f020002;
+        public static final int capricorn=0x7f020003;
+        public static final int defense=0x7f020004;
+        public static final int gemini=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int leo=0x7f020007;
+        public static final int libra=0x7f020008;
+        public static final int life=0x7f020009;
+        public static final int mana=0x7f02000a;
+        public static final int ophiuchus=0x7f02000b;
+        public static final int parchment=0x7f02000c;
+        public static final int pisces=0x7f02000d;
+        public static final int sagittarius=0x7f02000e;
+        public static final int scorpio=0x7f02000f;
+        public static final int separator=0x7f020010;
+        public static final int taurus=0x7f020011;
+        public static final int virgo=0x7f020012;
     }
     public static final class id {
-        public static final int dummy_button=0x7f070002;
+        public static final int ImageDefense=0x7f070014;
+        public static final int ImageLife=0x7f070012;
+        public static final int ImageMana=0x7f070010;
+        public static final int ImageSing=0x7f07000a;
+        public static final int defenseplayerinfo=0x7f070015;
+        public static final int dummy_button=0x7f070007;
+        public static final int expplayerinfo=0x7f07000e;
         public static final int fullscreen_content=0x7f070000;
-        public static final int fullscreen_content_controls=0x7f070001;
-        public static final int textView1=0x7f070003;
+        public static final int fullscreen_content_controls=0x7f070006;
+        public static final int imageView2=0x7f07001f;
+        public static final int lblDmgDone=0x7f070002;
+        public static final int lblDmgRecived=0x7f070003;
+        public static final int lblDuelLose=0x7f070019;
+        public static final int lblDuelWin=0x7f070018;
+        public static final int lblMana=0x7f070005;
+        public static final int lblRCmbtDmgRecived=0x7f07001d;
+        public static final int lblSymbols=0x7f070004;
+        public static final int lblTitle=0x7f070001;
+        public static final int lblTotalDuels=0x7f070017;
+        public static final int lblsign=0x7f07001b;
+        public static final int levelplayerinfo=0x7f07000c;
+        public static final int lifeplayerinfo=0x7f070013;
+        public static final int manaplayerinfo=0x7f070011;
+        public static final int nameplayerinfo=0x7f070009;
+        public static final int tableRowExp=0x7f07000d;
+        public static final int tableRowLevel=0x7f07000b;
+        public static final int tableRowName=0x7f070008;
+        public static final int tableRowStats=0x7f07000f;
+        public static final int tableRowStatsDmg=0x7f07001c;
+        public static final int tableRowothers=0x7f070020;
+        public static final int tableRowseparator1=0x7f07001a;
+        public static final int tableRowseparator2=0x7f07001e;
+        public static final int tableRowtotalduels=0x7f070016;
     }
     public static final class layout {
         public static final int activity_combat_result=0x7f030000;
-        public static final int activity_player_stats=0x7f030001;
+        public static final int activity_player_info=0x7f030001;
+        public static final int activity_player_stats=0x7f030002;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
         public static final int dummy_button=0x7f050001;
         public static final int dummy_content=0x7f050002;
+        public static final int exp=0x7f050013;
+        public static final int lblDmgDone=0x7f05000b;
+        public static final int lblDmgRecived=0x7f05000c;
+        public static final int lblDuelLose=0x7f050007;
+        public static final int lblDuelTotal=0x7f050008;
+        public static final int lblDuelWin=0x7f050006;
+        public static final int lblMana=0x7f050009;
+        public static final int lblStats=0x7f050005;
+        public static final int lblTotalSymbols=0x7f05000a;
+        public static final int lvl1=0x7f05000e;
+        public static final int lvl2=0x7f05000f;
+        public static final int lvl3=0x7f050010;
+        public static final int lvl4=0x7f050011;
+        public static final int lvl5=0x7f050012;
+        public static final int playerdefense=0x7f050017;
+        public static final int playerlife=0x7f050015;
+        public static final int playermana=0x7f050016;
+        public static final int playername=0x7f050014;
         public static final int title_activity_combat_result=0x7f050004;
+        public static final int title_activity_player_info=0x7f05000d;
         public static final int title_activity_player_stats=0x7f050003;
+        public static final int youlose=0x7f050019;
+        public static final int youwin=0x7f050018;
     }
     public static final class style {
         /** 

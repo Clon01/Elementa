@@ -7,37 +7,170 @@
 
     <!--
          The primary full-screen view. This can be replaced with whatever view
-         is needed to present your content, e.g. VideoView, SurfaceView,
-         TextureView, etc.
-    -->
-<TextView
+         is needed to present your content, e.g. VideoView, SurfaceView,TextureView, etc.    -->
+
+    <TextView
         android:id="@+id/fullscreen_content"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:gravity="center"
         android:keepScreenOn="true"
         android:text="@string/dummy_content"
+        android:textAlignment="center"
         android:textColor="#33b5e5"
         android:textSize="50sp"
         android:textStyle="bold" />
-    <!--
-         This FrameLayout insets its children based on system windows using
-         android:fitsSystemWindows.
-    -->
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="327dp"
-        android:layout_height="123dp"
-        android:layout_gravity="bottom|center_horizontal"
-        android:text="@string/app_name"
-        android:textColor="@color/Black"
-        android:textSize="65sp" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:text="@string/lblStats"
+            android:textColor="@color/Black"
+            android:textSize="45sp" />
+
+        <TableRow
+            android:id="@+id/tableRowtotalduels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/lblTotalDuels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/lblDuelTotal"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/lblDuelWin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/lblDuelWin"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lblDuelLose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_span="2"
+                android:padding="5dp"
+                android:text="@string/lblDuelLose"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowseparator1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/lblsign"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/separator"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowStatsDmg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/lblDmgDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/lblDmgDone"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lblRCmbtDmgRecived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/lblDmgRecived"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
+
+        </TableRow>
+<TableRow
+            android:id="@+id/tableRowseparator2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/separator"/>
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRowothers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/lblSymbols"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/lblTotalSymbols"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lblMana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/lblMana"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+    </TableLayout>
+    <!--
+         This FrameLayout insets its children based on system windows using android:fitsSystemWindows.
+    -->
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fitsSystemWindows="true" >
+        android:fitsSystemWindows="true"
+        android:paddingLeft="50dp"
+        android:paddingTop="50dp" >
 
         <LinearLayout
             android:id="@+id/fullscreen_content_controls"

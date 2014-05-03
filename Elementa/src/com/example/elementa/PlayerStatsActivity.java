@@ -57,30 +57,57 @@ public class PlayerStatsActivity extends Activity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         // Hide title bar
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-		
+      
+        //Load fonts
+	    Typeface HeadFont = Typeface.createFromAsset(getAssets(), "fonts/header.ttf");
+	    //Typeface TextFont = Typeface.createFromAsset(getAssets(), "fonts/text.ttf");
+	     
 		
 		setContentView(R.layout.activity_player_stats);
 
 		final View controlsView = findViewById(R.id.fullscreen_content_controls);
 		final View contentView = findViewById(R.id.fullscreen_content);
 		
-
 		
-		TextView text1 = (TextView) findViewById(R.id.textView1);
-		//text1.setText(R.string.app_name);
+		//FAKE VARIABLES
+		//END FAKE VAR
 		
-		//Load fonts
-
-	    Typeface HeadFont = Typeface.createFromAsset(getAssets(), "fonts/header.ttf");
-	    Typeface TextFont = Typeface.createFromAsset(getAssets(), "fonts/text.ttf");
-	     
+		//Load Text of View for modify
+		//STATS
+		TextView lblTitle = (TextView) findViewById(R.id.lblTitle);
+		//Duels Win
+		TextView lblDuelWin = (TextView) findViewById(R.id.lblDuelWin);
+		//Duels Lose
+		TextView lblDuelLose = (TextView) findViewById(R.id.lblDuelLose);
+		//Total Duels
+		TextView lblTotalDuel = (TextView) findViewById(R.id.lblTotalDuels);
+		//Total Symbols
+		TextView lblSymbols = (TextView) findViewById(R.id.lblSymbols);
+		//Mana Used
+		TextView lblMana = (TextView) findViewById(R.id.lblMana);
+		//Damage Done
+		TextView lblDmgDone = (TextView) findViewById(R.id.lblDmgDone);
+		//Damage Received
+		TextView lblDmgRecived = (TextView) findViewById(R.id.lblRCmbtDmgRecived);
+		
 	   
 	 	//Apply fonts
-		
-	     text1.setTypeface(HeadFont);
+	    //all HeadFont
+	     lblTitle.setTypeface(HeadFont);	
+	     lblDuelWin.setTypeface(HeadFont);
+	     lblDuelLose.setTypeface(HeadFont);
+	     lblTotalDuel.setTypeface(HeadFont);
+	     lblSymbols.setTypeface(HeadFont);
+	     lblMana.setTypeface(HeadFont);
+	     lblDmgDone.setTypeface(HeadFont);
+	     lblDmgRecived.setTypeface(HeadFont);
+	     
+	     //TESTING ONLY
+	
+	     
+	     //END TEST ONLY
 	     
 	     
-
 		// Set up an instance of SystemUiHider to control the system UI for
 		// this activity.
 		mSystemUiHider = SystemUiHider.getInstance(this, contentView,

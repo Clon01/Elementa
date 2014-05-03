@@ -16,21 +16,26 @@
         <activity
             android:name="com.example.elementa.PlayerStatsActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:screenOrientation="landscape"
             android:label="@string/title_activity_player_stats"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            
         </activity>
         <activity
             android:name="com.example.elementa.CombatResultActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:screenOrientation="landscape"
             android:label="@string/title_activity_combat_result"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme" >
+            
+        </activity>
+        <activity
+            android:name="com.example.elementa.PlayerInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_player_info"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme" >
+                        
         </activity>
     </application>
 

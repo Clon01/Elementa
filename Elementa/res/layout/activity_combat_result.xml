@@ -27,6 +27,60 @@
          android:fitsSystemWindows.
     -->
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:text="@string/youwin"
+            android:textColor="@color/Black"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/lblDmgDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/lblDmgDone"
+            android:textColor="@color/Black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lblDmgRecived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/lblDmgRecived"
+            android:textColor="@color/Black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lblSymbols"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/lblTotalSymbols"
+            android:textColor="@color/Black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lblMana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/lblMana"
+            android:textColor="@color/Black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -48,6 +102,7 @@
                 android:layout_weight="1"
                 android:text="@string/dummy_button" />
         </LinearLayout>
+
     </FrameLayout>
 
 </FrameLayout>

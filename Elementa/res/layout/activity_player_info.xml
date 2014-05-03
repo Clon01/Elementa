@@ -1,0 +1,165 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/parchment"
+    tools:context="com.example.elementa.PlayerInfoActivity" >
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/dummy_content"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center" >
+
+        <TableRow
+            android:id="@+id/tableRowName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/nameplayerinfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="6"
+                android:gravity="center_horizontal"
+                android:text="@string/playername"
+                android:textColor="@color/Black"
+                android:textSize="46sp" />
+
+            <ImageView
+                android:id="@+id/ImageSing"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:maxHeight="50dp"
+                android:src="@drawable/taurus" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:id="@+id/levelplayerinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:gravity="center_horizontal"
+                android:text="@string/lvl1"
+                android:textColor="@color/Black"
+                android:textSize="36sp"
+                android:textStyle="bold|italic" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowExp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/expplayerinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:gravity="center_horizontal"
+                android:text="@string/exp"
+                android:textColor="@color/Black"
+                android:textSize="40sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/ImageMana"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:maxHeight="50dp"
+                android:src="@drawable/mana" />
+
+            <TextView
+                android:id="@+id/manaplayerinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/playermana"
+                android:textColor="@color/Black"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/ImageLife"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:maxHeight="50dp"
+                android:src="@drawable/life" />
+
+            <TextView
+                android:id="@+id/lifeplayerinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/playerlife"
+                android:textColor="@color/Black"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/ImageDefense"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:maxHeight="50dp"
+                android:src="@drawable/defense" />
+
+            <TextView
+                android:id="@+id/defenseplayerinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/playermana"
+                android:textColor="@color/Black"
+                android:textSize="30sp" />
+        </TableRow>
+    </TableLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+
+            <Button
+                android:id="@+id/dummy_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dummy_button" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

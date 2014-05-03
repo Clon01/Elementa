@@ -4,7 +4,28 @@
     <string name="app_name">Elementa</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="title_activity_player_stats">PlayerStatsActivity</string>
-    <string name="title_activity_combat_result">Elementa</string>
+    <string name="title_activity_player_stats">Elementa:PlayerStats</string>
+    <string name="title_activity_combat_result">Elementa:CombatResult</string>
+    <string name="lblStats">Statistics</string>
+    <string name="lblDuelWin">WIN:</string>
+    <string name="lblDuelLose">LOSE:</string>
+    <string name="lblDuelTotal">Total duels:</string>
+    <string name="lblMana">Mana used: </string>
+    <string name="lblTotalSymbols">Symbols used:</string>
+    <string name="lblDmgDone">Damage done:</string>
+    <string name="lblDmgRecived">Damage received:</string>
+    <string name="title_activity_player_info">ELEMENTA:PlayerInfoActivity</string>
+    <string name="lvl1">Novice</string>
+    <string name="lvl2">"apprentice "</string>
+    <string name="lvl3">"Initiated "</string>
+    <string name="lvl4">Applicant</string>
+    <string name="lvl5">Sorcerer</string>
+    <string name="exp">0</string><string name="playername">Fulanito de Tal</string>
+    
+    <string name="playerlife">100</string>
+    <string name="playermana">100</string>
+    <string name="playerdefense">10%</string>
+    <string name="youwin">YOU WIN</string>
+    <string name="youlose">YOU LOSE</string>
 
 </resources>
